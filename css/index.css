@@ -46,3 +46,75 @@ header nav a:hover,
 header nav a.activo {
   color: #fff;
 }
+/* Pelicula principal */
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  /* se agregan dos fondos */
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url('../img/backdrop.jpeg');
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+  text-align: justify;
+}
+
+.pelicula-principal .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+  background-color: #fff;
+  color: #141414;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1.25em;
+}
+
+/* ------ Media Queries  ------*/
+@media screen and (max-width: 800px) {
+  header .logo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pelicula-principal {
+    font-size: 14px;
+  }
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+}
