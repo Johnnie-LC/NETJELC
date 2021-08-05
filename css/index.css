@@ -118,3 +118,8 @@ header nav a.activo {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 518px) {
+  header nav {
+    font-size: 13px;
+  }
+}
