@@ -205,10 +205,16 @@ header nav a.activo {
     overflow: visible;
   }
   .peliculas_recomendadas .contenedor-crousel .carousel {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 20px; */
+    flex-wrap: wrap;
   }
+  .peliculas_recomendadas .contenedor-crousel .carousel .pelicula {
+    max-width: 30%;
+    margin: 5px;
+  }
+
   .peliculas_recomendadas .indicadores,
   .peliculas_recomendadas .flecha-derecha,
   .peliculas_recomendadas .flecha-izquierda {
