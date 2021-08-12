@@ -225,4 +225,33 @@ header nav a.activo {
   header nav {
     font-size: 13px;
   }
+  .contenedor-titulo-controles h3 {
+    font-size: 25px;
+  }
+  .pelicula-principal {
+    font-size: 14px;
+  }
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+  .peliculas_recomendadas .contenedor-crousel {
+    overflow: visible;
+  }
+  .peliculas_recomendadas .contenedor-crousel .carousel {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; */
+    flex-wrap: wrap;
+  }
+  .peliculas_recomendadas .contenedor-crousel .carousel .pelicula {
+    max-width: 28%;
+    margin: 5px;
+  }
+
+  .peliculas_recomendadas .indicadores,
+  .peliculas_recomendadas .flecha-derecha,
+  .peliculas_recomendadas .flecha-izquierda {
+    display: none;
+  }
+}
 }
